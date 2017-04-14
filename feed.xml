@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Bolder Flight Systems</title>
-    <description>Bolder Flight Systems, by Design!
-</description>
-    <link>http://bolderflight.com/</link>
-    <atom:link href="http://bolderflight.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Feb 2016 11:06:49 -0600</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2016 11:06:49 -0600</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-04-14T16:03:24-07:00</updated><id>//</id><title type="html">Bolder Flight Systems</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author></feed>

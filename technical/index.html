@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Technical Specifications - Bolder Flight Systems</title>
+
+
+
+
+<meta name="description" content="An amazing website.">
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Bolder Flight Systems">
+<meta property="og:title" content="Technical Specifications">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Bolder Flight Systems",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Bolder Flight Systems Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--splash">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <ul class="visible-links">
+        <a class="site-title" href="/">Bolder Flight Systems</a>
+          
+            
+            <li class="masthead__menu-item"><a href="/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/products/">Products</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/community/">Community</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/services/">Services</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/technical/">Technical</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Technical Specifications">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a>    <ul>
+      <li><a href="#flight-systems" id="markdown-toc-flight-systems">Flight Systems</a></li>
+      <li><a href="#simulation" id="markdown-toc-simulation">Simulation</a></li>
+      <li><a href="#development-environment" id="markdown-toc-development-environment">Development Environment</a></li>
+    </ul>
+  </li>
+  <li><a href="#marmot-flight-control-system" id="markdown-toc-marmot-flight-control-system">Marmot Flight Control System</a>    <ul>
+      <li><a href="#specifications" id="markdown-toc-specifications">Specifications</a></li>
+    </ul>
+  </li>
+  <li><a href="#raven-sensor-and-actuator-node" id="markdown-toc-raven-sensor-and-actuator-node">Raven Sensor and Actuator Node</a>    <ul>
+      <li><a href="#specifications-1" id="markdown-toc-specifications-1">Specifications</a></li>
+    </ul>
+  </li>
+  <li><a href="#swift-air-data" id="markdown-toc-swift-air-data">Swift Air Data</a>    <ul>
+      <li><a href="#specifications-2" id="markdown-toc-specifications-2">Specifications</a></li>
+    </ul>
+  </li>
+  <li><a href="#add-on-modules" id="markdown-toc-add-on-modules">Add On Modules</a>    <ul>
+      <li><a href="#pwm-sbus-and-analog" id="markdown-toc-pwm-sbus-and-analog">PWM, SBUS, and Analog</a>        <ul>
+          <li><a href="#specifications-3" id="markdown-toc-specifications-3">Specifications</a></li>
+        </ul>
+      </li>
+      <li><a href="#vectornav" id="markdown-toc-vectornav">VectorNav</a>        <ul>
+          <li><a href="#specifications-4" id="markdown-toc-specifications-4">Specifications</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#connectors" id="markdown-toc-connectors">Connectors</a>    <ul>
+      <li><a href="#bfs-bus" id="markdown-toc-bfs-bus">BFS-Bus</a></li>
+      <li><a href="#uart" id="markdown-toc-uart">UART</a></li>
+      <li><a href="#i2c" id="markdown-toc-i2c">I2C</a></li>
+      <li><a href="#can" id="markdown-toc-can">CAN</a></li>
+      <li><a href="#spi" id="markdown-toc-spi">SPI</a></li>
+      <li><a href="#sbus-rx" id="markdown-toc-sbus-rx">SBUS RX</a></li>
+      <li><a href="#sbus-tx" id="markdown-toc-sbus-tx">SBUS TX</a></li>
+      <li><a href="#pwm-1" id="markdown-toc-pwm-1">PWM</a></li>
+      <li><a href="#analog-1" id="markdown-toc-analog-1">Analog</a></li>
+      <li><a href="#digital" id="markdown-toc-digital">Digital</a></li>
+      <li><a href="#gpio" id="markdown-toc-gpio">GPIO</a></li>
+    </ul>
+  </li>
+  <li><a href="#bfs-bus-1" id="markdown-toc-bfs-bus-1">BFS Bus</a>    <ul>
+      <li><a href="#overview-1" id="markdown-toc-overview-1">Overview</a></li>
+      <li><a href="#wiring" id="markdown-toc-wiring">Wiring</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<h1 id="overview">Overview</h1>
+
+<p><a name="Flight-Systems"></a></p>
+
+<h2 id="flight-systems">Flight Systems</h2>
+
+<p><a href="#Marmot-Flight-Control-System"><img src="/assets/images/marmot_150.png" alt="image-left" class="align-left" /></a></p>
+
+<p style="font-size: 80%;">Our flight system is extremely low latency, deterministic, and highly scalable. The core of our flight system is the Flight Control System (FCS), which consists of dual heterogeneous processors: a low level processor, called the Flight Management Unit (FMU), which conducts sensor and actuator operations, filtering, and maintains a hard real time environment; and a high level processor which uses the filtered sensor data to run control loops and compute actuator commands. This approach facilitates determinism, through providing a hard real time system, while maintaining a researcher-friendly development environment.</p>
+
+<p><a href="#Raven-Node"><img src="/assets/images/raven_200.png" alt="image-right" class="align-right" /></a></p>
+
+<p style="font-size: 80%;">The same low level processor used for the Flight Management Unit is the core component of our sensor and actuator expansion nodes. These nodes feature numerous I/O options enabling expansion of the flight system and cleaner aircraft wiring. A unique bus architecture, called the BFS Bus, is used to connect these nodes to the FMU. The BFS Bus uses an overclocked I2C protocol along with two digital lines. The overclocked I2C protocol has an extremely high bandwidth and is capable of transmitting data at a rate of 245 kBytes/s. The digital lines are pulsed at the beginning of the data collection frame and at the actuator output frame. With this approach, data from all sensors on the network of FMU’s and nodes is collected simultaneously. Similarly, all actuator commands on that network are also sent simultaneously. This enables our flight system to be highly scalable, by adding additional nodes to the network, without impacting overall system latency.</p>
+
+<p style="font-size: 80%;">We consider this capability critical for research and development environments, where: sensor requirements change often, large numbers of sensors are typically required and often spread throughout the vehicle, and sensing and actuation requirements often change dramatically from one research and development program, or vehicle, to the next. In all of these cases, enabling high levels of scalability with a minimum of effort and no impact on latency while using the same flight system environment, offers huge time and cost efficiencies.</p>
+
+<p style="font-size: 80%;">As an example, a functional layout of our flight system on two University of Minnesota research platforms is demonstrated below.</p>
+
+<p style="font-size: 80%;">The first platform is a modified <a href="http://www.e-fliterc.com/Products/Default.aspx?ProdID=EFL4025">Ultra Stick 25e</a>. This research platform is small, hand-launchable, inexpensive, and used primarily to support courses and research involving navigation filters, flight control laws, and flight dynamics estimation.</p>
+
+<p><img src="/assets/images/simple_FBD_700.png" alt="image-center" class="align-center" /></p>
+
+<p style="font-size: 80%;">The functional layout is relatively simple and, although an expansion node is not strictly needed since the FMU has enough of the required I/O, an expansion node is placed in the aircraft wing. This is done to facilitate much cleaner aircraft wiring and to enable completely swapable wings, in case one wing has a specialized sensor, for instance. Because processing occurs at the sensor and actuator node, these wings are truly swapable, receiving actuator commands in terms of angles and sending data in engineering units (pressures, speeds, altitudes for air data; inertial position and velocity for GPS, etc.)</p>
+
+<p style="font-size: 80%;">The second platform is called <a href="/assets/images/mAEWing2.png">mAEWing2</a> and it’s being used to conduct wing shape morphing and flutter suppression research. This research platform is large, about 14 ft wingspan and 40 lbs, and extremely complex. Each wing has six actuators and control surface position sensors. Additionally two IMU’s are located fore and aft at each wing tip and each wing mid-span. On the center body, there are two electric ducted fans, a five hole probe to gather wind angle data, two IMU’s located fore and aft, and a retractable landing gear. Finally, it was desired to collect servo rail voltage data, motor data, and to use a higher quality IMU. On top of the large sensing and actuation requirements was the need to maintain low latency for flutter suppression.</p>
+
+<p><img src="/assets/images/complex_FBD_1200.png" alt="image-center" class="align-center" /></p>
+
+<p style="font-size: 80%;">This system easily scales to meet the needs of a given research and development program or platform. It can accommodate relatively small and simple vehicles up to large and complex systems while maintaining low latency and determinism.</p>
+
+<p><a name="Simulation"></a></p>
+
+<h2 id="simulation">Simulation</h2>
+
+<p style="font-size: 80%;">Simulation, verification, validation, and data analysis are crucial components to research and development programs. A high fidelity MATLAB / Simulink simulation is available to support these steps. This simulation has been used at the University of Minnesota and other research institutions to support courses and research since 2006. It effectively supports switching between multiple research aircraft to be simulated, is easy to add additional vehicles, and supports multiple levels of model fidelity. This simulation is in the process of being updated to support software and hardware in the loop testing, as well as autocode generation and flight data playback, with our updated flight control system. This capability should be available summer of 2017.</p>
+
+<p><a name="Development-Environment"></a></p>
+
+<h2 id="development-environment">Development Environment</h2>
+
+<p style="font-size: 80%;">Arduino is used as a development environment for the Flight Management Unit (FMU) and expansion sensor and actuator nodes. Libraries are available for all Bolder Flight Systems supplied sensors and, due to the vibrant Teensy and Arduino communities, many additional sensors are already supported. These processors are extremely powerful and well supported by the community. Software is uploaded via USB and coding is standard C++. Our high level processor runs Linux, offering a very common development environment with packaged libraries and supporting many coding languages (C++, Python, Rust, etc).</p>
+
+<p style="font-size: 80%;">This approach enables great performance from our system while maintaining a researcher friendly development environment.</p>
+
+<p><a name="Marmot-Flight-Control-System"></a></p>
+
+<h1 id="marmot-flight-control-system">Marmot Flight Control System</h1>
+
+<p><a href="/assets/images/marmot_1146.png"><img src="/assets/images/marmot_300.png" alt="image-right" class="align-right" /></a></p>
+
+<p style="font-size: 80%;">The core of our flight system consisting of dual heterogeneous processors: a low level processor, called the Flight Management Unit (FMU), which conducts sensor and actuator operations, filtering, and maintains a hard real time environment; and a high level processor which uses the filtered sensor data to run control loops and compute actuator commands. The Marmot Flight Control System (FCS) uses a BeagleBone Black as a high level processor and a cape developed around the Teensy 3.6 as the FMU. The Teensy 3.6 processor is a 240 MHz Cortex M4 with a single precision hardware floating point unit. In addition the Teensy 3.6, the FMU includes integrated:</p>
+<ul style="font-size: 80%;">
+  <li>Voltage regulation, +6.5V to +36V input voltage, up to 2A of +5V output capacity plus high accuracy measurement of input and regulated voltages</li>
+  <li>MPU-9250 nine axis inertial measurement unit</li>
+  <li>BME 280 pressure, temperature, and humidity sensor</li>
+  <li>SBUS input for measuring and using up to 16 channels of pilot commands from a RC receiver</li>
+  <li>SBUS output for actuating up to 16 channels of SBUS capable servos along with high accuracy measurement of the SBUS servo rail voltage</li>
+  <li>PWM output for actuating up to 8 channels of PWM capable servos along with high accuracy measurement of PWM servo rail voltage</li>
+  <li>One BFS Bus for connecting expansion servo and actuator nodes</li>
+  <li>One I2C and one SPI bus for connecting external sensors, such as the Swift Air Data Sensor</li>
+  <li>Four UARTS, two from the Teensy 3.6 and two from the BeagleBone Black for connecting external sensors such as GPS receivers or radio modems</li>
+  <li>Two GPIO’s, which can be configured for PWM output, digital I/O, or analog input</li>
+</ul>
+
+<h2 id="specifications">Specifications</h2>
+
+<ul style="font-size: 80%;">
+  <li>Voltage input: +6.5V to +36V</li>
+  <li>Current draw: 350 mA</li>
+  <li>Size: 55 mm x 89 mm x 30.5 mm</li>
+  <li>Weight: 75 g</li>
+  <li><a href="/assets/docs/marmot-fcs-sch.pdf">Schematic</a></li>
+</ul>
+
+<p class="notice--warning">This system is intended for research, development, and educational purposes. It is not a ready-to-fly autopilot. We provide tested hardware, low level sensor drivers, a development environment, and support to enable our customers to develop software, analyze data, and conduct research.</p>
+
+<p><a name="Raven-Node"></a></p>
+
+<h1 id="raven-sensor-and-actuator-node">Raven Sensor and Actuator Node</h1>
+
+<p><a href="/assets/images/raven_1146.png"><img src="/assets/images/raven_300.png" alt="image-right" class="align-right" /></a></p>
+
+<p style="font-size: 80%;">The Raven Sensor and Actuator Node enables the easy expansion of the Bolder Flight Systems architecture to include many additional sensors and actuators as well as simplifying wiring. This node enables our system to easily scale to meet the needs of a given research and development program or platform. It can accommodate relatively small and simple vehicles up to large and complex systems while maintaining low latency and determinism. The Raven Node is designed around the Teensy 3.6 processor, a 240 MHz Cortex M4 with a single-precision hardware floating point unit. In addition the Teensy 3.6, the node includes integrated:</p>
+<ul style="font-size: 80%;">
+  <li>SBUS input for measuring and using up to 16 channels of pilot commands from a RC receiver</li>
+  <li>SBUS output for actuating up to 16 channels of SBUS capable servos along with high accuracy measurement of the SBUS servo rail voltage</li>
+  <li>PWM output for actuating up to 8 channels of PWM capable servos along with high accuracy measurement of PWM servo rail voltage</li>
+  <li>One BFS Bus for connecting to the Flight Management Unit or other expansion nodes</li>
+  <li>Two I2C buses for connecting external sensors, such as the Swift Air Data Sensor</li>
+  <li>Two UARTS from the Teensy 3.6 for connecting external sensors such as GPS receivers or radio modems</li>
+  <li>Eight analog inputs, broken out to convenient headers</li>
+  <li>Four digital I/O pins</li>
+</ul>
+
+<p style="font-size: 80%;">In addition to adding capability, the Raven Node simplifies wiring, requiring only the BFS bus to run from the Marmot Flight Control System to the Raven Node. For example, with a Raven Node placed in the wing of a fixed-wing UAS, only the BFS Bus and servo power would need to be connected across the wing break.</p>
+
+<h2 id="specifications-1">Specifications</h2>
+
+<ul style="font-size: 80%;">
+  <li>Voltage input: +6.5V to +36V</li>
+  <li>Current draw: 125 mA</li>
+  <li>Size: 45 mm x 70 mm x 8.5 mm</li>
+  <li>Weight: 20 g</li>
+  <li><a href="/assets/docs/raven-node-sch.pdf">Schematic</a></li>
+</ul>
+
+<p class="notice--warning">This system is intended for research, development, and educational purposes. It is not a ready-to-fly autopilot. We provide tested hardware, low level sensor drivers, a development environment, and support to enable our customers to develop software, analyze data, and conduct research.</p>
+
+<p><a name="Swift-Air-Data"></a></p>
+
+<h1 id="swift-air-data">Swift Air Data</h1>
+
+<p><a href="/assets/images/swift_800.png"><img src="/assets/images/swift_200.png" alt="image-right" class="align-right" /></a></p>
+
+<p style="font-size: 80%;">The Swift Air Data System provides high accuracy measurements of static and differential pressure in a convenient package that integrates easily with Bolder Flight Systems components.</p>
+<ul style="font-size: 80%;">
+  <li>Calibrated and temperature compensated static and differential pressure with digital output over I2C</li>
+  <li>Small overall error within a temperature range of -25C to +85C</li>
+  <li>14 bit resolution</li>
+  <li>Libraries available to initialize the sensor and collect pressure data at rates of up to 2 kHz</li>
+</ul>
+<h2 id="specifications-2">Specifications</h2>
+
+<ul style="font-size: 80%;">
+  <li>Voltage input: +3.32V to +6V</li>
+  <li>Current draw: 20 mA</li>
+  <li>Size: 28 mm x 40 mm x 18.5 mm</li>
+  <li>Weight: 10 g</li>
+</ul>
+
+<p><a name="Add-On-Modules"></a></p>
+
+<h1 id="add-on-modules">Add On Modules</h1>
+
+<h2 id="pwm-sbus-and-analog">PWM, SBUS, and Analog</h2>
+
+<p style="font-size: 80%;">Add on modules are available to break out the PWM, SBUS, and analog signals from the <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a> connectors on the <a href="#Marmot-Flight-Control-System">Marmot FCS</a> and <a href="#Raven-Node">Raven Node</a> to convenient 0.1” (2.54 mm) spaced headers, which fit standard servo connectors. These modules can be mounted on the Marmot FCS and Raven Node with 2-56 sized standoffs, which are provided with the module. The PWM and SBUS modules enable up to eight PWM or SBUS capable servos to be actuated. Additionally, the SBUS module includes two SBUS connectors, so a second SBUS module can be daisy chained to actuate up to sixteen SBUS capable servos. Both of these modules have integrated power and ground buses plus a screw terminal for power input. This feature means that a BEC capable ESC can be connected to the module to power the servos or an external power supply can be connected with the screw terminal to power the servos. These boards support up to +9.9V and 12A of supply for the servos. The Marmot FCS and Raven Node feature integrated servo rail voltage measurement.</p>
+
+<p style="font-size: 80%;">The analog add on module breaks out the analog <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a> connector on the <a href="#Raven-Node">Raven Node</a> to convenient 0.1” (2.54 mm) spaced headers, which fit standard servo connectors. This module features and integrated +3.3V and ground rail to facilitate easy integration of potentiometers (i.e. for control surface position or wind angle measurement). Up to eight channels of analog input are supported.</p>
+
+<h3 id="specifications-3">Specifications</h3>
+
+<h4 id="pwm">PWM</h4>
+
+<ul style="font-size: 80%;">
+  <li>Supports up to 8 servos</li>
+  <li>Voltage input: up to +9.9V</li>
+  <li>Current draw: up to 12A</li>
+  <li>Size: 22 mm x 30 mm x 12 mm</li>
+  <li>Weight: 4 g</li>
+</ul>
+
+<h4 id="sbus">SBUS</h4>
+
+<ul style="font-size: 80%;">
+  <li>Supports up to 8 servos per module, up to 16 servos by daisy chaining two modules</li>
+  <li>Voltage input: up to +9.9V</li>
+  <li>Current draw: up to 12A</li>
+  <li>Size: 22 mm x 30 mm x 12 mm</li>
+  <li>Weight: 4 g</li>
+</ul>
+
+<h4 id="analog">Analog</h4>
+
+<ul style="font-size: 80%;">
+  <li>Supports up to 8 channels of analog input (+0V to +3.3V)</li>
+  <li>Voltage supply: +3.3V</li>
+  <li>Size: 22 mm x 30 mm x 12 mm</li>
+  <li>Weight: 2 g</li>
+</ul>
+
+<h2 id="vectornav">VectorNav</h2>
+
+<p style="font-size: 80%;"><a href="http://www.vectornav.com">VectorNav VN-100 and VN-200</a> inertial measurement units can be added on to the <a href="#Marmot-Flight-Control-System">Marmot FCS</a> for use cases where more accurate inertial data is desired. This module can be mounted on the Marmot FCS with 2-56 sized standoffs, which are provided. The VN-100 and VN-200 IMU’s are integrated with SPI for high speed data transfers and a low level sensor driver is available to setup the IMU’s and collect data.</p>
+
+<h3 id="specifications-4">Specifications</h3>
+
+<ul style="font-size: 80%;">
+  <li>Supports VN-100 and VN-200 IMU’s</li>
+  <li>Size: 30 mm x 37 mm x 5 mm</li>
+  <li>Weight: 5 g</li>
+</ul>
+
+<h1 id="connectors">Connectors</h1>
+
+<p style="font-size: 80%;">Below are the connectors for all Bolder Flight Systems components. These connectors incorporate signals as well as a regulated power supply.</p>
+<ul style="font-size: 80%;">
+  <li>Connector type: <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a></li>
+  <li>Cable: 26 AWG, insulation outer diameter 0.76 to 1.0 mm. We use <a href="http://www.digikey.com/products/en?FV=ffec9cf5">EcoWire 6711 by Alpha Wire</a>.</li>
+  <li>Power supply: +5V</li>
+  <li>Current draw: up to 1A</li>
+</ul>
+<p class="notice--danger"><strong>Watch out!</strong> All signal voltages <strong>must be</strong> +3.3V, higher voltage signals may damage components!</p>
+
+<p style="font-size: 80%;">All bused signals are designed to provide two identical connectors per each interface per node, so that the node can be connected to the bus without need to use T-connectors.</p>
+
+<p><a name="BFS-Bus-I2C"></a></p>
+
+<h2 id="bfs-bus">BFS-Bus</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+5V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Slate</td> 
+    <td>SCL</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Violet</td> 
+    <td>SDA</td>
+    <td>+3.3V</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Blue</td> 
+    <td>Int 1</td>
+    <td>+3.3V</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>White</td> 
+    <td>Int 2</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="uart">UART</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+5V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>White</td> 
+    <td>TX</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Blue</td> 
+    <td>RX</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="i2c">I2C</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+5V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Slate</td> 
+    <td>SCL</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Violet</td> 
+    <td>SDA</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="can">CAN</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+5V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Orange</td> 
+    <td>CAN H</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Brown</td> 
+    <td>CAN L</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="spi">SPI</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+5V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Slate</td> 
+    <td>SCK</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Blue</td> 
+    <td>MISO</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Violet</td> 
+    <td>MOSI</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>White</td> 
+    <td>CS</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Orange</td> 
+    <td>Int Out</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Brown</td> 
+    <td>Int In</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="sbus-rx">SBUS RX</h2>
+
+<p class="notice--danger"><strong>Watch out!</strong> The SBUS RX is for RC receivers only and provides power to the receiver. <strong>Never</strong> connect any servos, power supplies or batteries to it or to the receiver connected to it.</p>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+5V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>White</td> 
+    <td>RX</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="sbus-tx">SBUS TX</h2>
+
+<p class="notice--warning">Pin 1 is used to measure the external voltage applied to the SBUS servos, which can be used and logged within the flight software. This voltage is limited to +9.9V.</p>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>Vmeas</td>
+    <td>+9.9V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Orange</td> 
+    <td>TX</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="pwm-1">PWM</h2>
+
+<p class="notice--warning">Pin 1 is used to measure the external voltage applied to the SBUS servos, which can be used and logged within the flight software. This voltage is limited to +9.9V.</p>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>Vmeas</td>
+    <td>+9.9V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>White</td> 
+    <td>Actuator 0</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Blue</td> 
+    <td>Actuator 1</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Slate</td> 
+    <td>Actuator 2</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Violet</td> 
+    <td>Actuator 3</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Orange</td> 
+    <td>Actuator 4</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Brown</td> 
+    <td>Actuator 5</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>White</td> 
+    <td>Actuator 6</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Violet</td> 
+    <td>Actuator 7</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="analog-1">Analog</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Red</td> 
+    <td>VCC</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Slate</td> 
+    <td>Analog 0</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Blue</td> 
+    <td>Analog 1</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Violet</td> 
+    <td>Analog 2</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>White</td> 
+    <td>Analog 3</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Brown</td> 
+    <td>Analog 4</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Orange</td> 
+    <td>Analog 5</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Blue</td> 
+    <td>Analog 6</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Slate</td> 
+    <td>Analog 7</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h2 id="digital">Digital</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>White</td> 
+    <td>Digital 0</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Orange</td> 
+    <td>Digital 1</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Blue</td> 
+    <td>Digital 2</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Brown</td> 
+    <td>Digital 3</td>
+    <td>+3.3V</td>
+  </tr>
+</table>
+
+<h2 id="gpio">GPIO</h2>
+
+<table style="width:50%">
+  <tr>
+    <th bgcolor="#dddddd">Pin</th>
+    <th bgcolor="#dddddd">Color</th> 
+    <th bgcolor="#dddddd">Signal</th>
+    <th bgcolor="#dddddd">Voltage</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>White</td> 
+    <td>GPIO 0</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Violet</td> 
+    <td>GPIO 1</td>
+    <td>+3.3V</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Black</td> 
+    <td>GND</td>
+    <td>GND</td>
+  </tr>
+</table>
+
+<h1 id="bfs-bus-1">BFS Bus</h1>
+
+<h2 id="overview-1">Overview</h2>
+
+<p style="font-size: 80%;">The BFS Bus is an extremely low-latency, high bandwidth bus. It is designed to enable expansion of the flight control system without introducing latency. I2C is used as the communication protocol with a 6 MHz clock rate, enabling transfer rates of 245 kBytes/s. The BFS Bus master (i.e. Marmot FCS) pulls the Int 1 line high at the start of a computation frame, indicating that all slave nodes (i.e. Raven Nodes) should take their sensor measurements. This approach means that all nodes on the BFS Bus are taking measurements simultaneously, regardless of the number of nodes, leading to an extremely low-latency bus. The BFS Bus master then requests data from each slave node. This data is logged and potentially used in the flight control laws to generate servo commands. The BFS Bus master sends servo commands to all applicable slave nodes. Finally, the BFS Bus master brings the Int 1 line low, signaling to all slave nodes to issue the servo commands. The Int 2 line is reserved for future use.</p>
+
+<h2 id="wiring">Wiring</h2>
+
+<p style="font-size: 80%;">Please see the <a href="#BFS-Bus-I2C">BFS Bus connector standards</a>.</p>
+
+    </section>
+  </article>
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/bolderflight"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Bolder Flight Systems. <a href="mailto:info@bolderflight.com"><font color="#4863A0">info@bolderflight.com</font></a>
+</div>
+      </footer>
+    </div>
+
+    <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
