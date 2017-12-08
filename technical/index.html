@@ -103,19 +103,16 @@
         <a class="site-title" href="/">Bolder Flight Systems</a>
           
             
-            <li class="masthead__menu-item"><a href="/about/">About</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="/products/">Products</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="/community/">Community</a></li>
           
             
             <li class="masthead__menu-item"><a href="/services/">Services</a></li>
           
             
             <li class="masthead__menu-item"><a href="/technical/">Technical</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/about/">About</a></li>
           
         </ul>
         <button><div class="navicon"></div></button>
@@ -141,50 +138,15 @@
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#overview" id="markdown-toc-overview">Overview</a>    <ul>
       <li><a href="#flight-systems" id="markdown-toc-flight-systems">Flight Systems</a></li>
-      <li><a href="#simulation" id="markdown-toc-simulation">Simulation</a></li>
       <li><a href="#development-environment" id="markdown-toc-development-environment">Development Environment</a></li>
     </ul>
   </li>
-  <li><a href="#marmot-flight-control-system" id="markdown-toc-marmot-flight-control-system">Marmot Flight Control System</a>    <ul>
-      <li><a href="#specifications" id="markdown-toc-specifications">Specifications</a></li>
-    </ul>
-  </li>
-  <li><a href="#raven-sensor-and-actuator-node" id="markdown-toc-raven-sensor-and-actuator-node">Raven Sensor and Actuator Node</a>    <ul>
-      <li><a href="#specifications-1" id="markdown-toc-specifications-1">Specifications</a></li>
-    </ul>
-  </li>
-  <li><a href="#swift-air-data" id="markdown-toc-swift-air-data">Swift Air Data</a>    <ul>
-      <li><a href="#specifications-2" id="markdown-toc-specifications-2">Specifications</a></li>
-    </ul>
-  </li>
+  <li><a href="#marmot-flight-control-system" id="markdown-toc-marmot-flight-control-system">Marmot Flight Control System</a></li>
+  <li><a href="#raven-sensor-and-actuator-node" id="markdown-toc-raven-sensor-and-actuator-node">Raven Sensor and Actuator Node</a></li>
+  <li><a href="#swift-air-data" id="markdown-toc-swift-air-data">Swift Air Data</a></li>
   <li><a href="#add-on-modules" id="markdown-toc-add-on-modules">Add On Modules</a>    <ul>
-      <li><a href="#pwm-sbus-and-analog" id="markdown-toc-pwm-sbus-and-analog">PWM, SBUS, and Analog</a>        <ul>
-          <li><a href="#specifications-3" id="markdown-toc-specifications-3">Specifications</a></li>
-        </ul>
-      </li>
-      <li><a href="#vectornav" id="markdown-toc-vectornav">VectorNav</a>        <ul>
-          <li><a href="#specifications-4" id="markdown-toc-specifications-4">Specifications</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#connectors" id="markdown-toc-connectors">Connectors</a>    <ul>
-      <li><a href="#bfs-bus" id="markdown-toc-bfs-bus">BFS-Bus</a></li>
-      <li><a href="#uart" id="markdown-toc-uart">UART</a></li>
-      <li><a href="#i2c" id="markdown-toc-i2c">I2C</a></li>
-      <li><a href="#can" id="markdown-toc-can">CAN</a></li>
-      <li><a href="#spi" id="markdown-toc-spi">SPI</a></li>
-      <li><a href="#sbus-rx" id="markdown-toc-sbus-rx">SBUS RX</a></li>
-      <li><a href="#sbus-tx" id="markdown-toc-sbus-tx">SBUS TX</a></li>
-      <li><a href="#pwm-1" id="markdown-toc-pwm-1">PWM</a></li>
-      <li><a href="#analog-1" id="markdown-toc-analog-1">Analog</a></li>
-      <li><a href="#digital" id="markdown-toc-digital">Digital</a></li>
-      <li><a href="#gpio" id="markdown-toc-gpio">GPIO</a></li>
-    </ul>
-  </li>
-  <li><a href="#bfs-bus-1" id="markdown-toc-bfs-bus-1">BFS Bus</a>    <ul>
-      <li><a href="#overview-1" id="markdown-toc-overview-1">Overview</a></li>
-      <li><a href="#wiring" id="markdown-toc-wiring">Wiring</a></li>
+      <li><a href="#pwm-sbus-and-analog" id="markdown-toc-pwm-sbus-and-analog">PWM, SBUS, and Analog</a></li>
+      <li><a href="#vectornav" id="markdown-toc-vectornav">VectorNav</a></li>
     </ul>
   </li>
 </ul>
@@ -226,14 +188,6 @@
 
 <p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
 
-<p><a name="Simulation"></a></p>
-
-<h2 id="simulation">Simulation</h2>
-
-<p style="font-size: 80%;">Simulation, verification, validation, and data analysis are crucial components to research and development programs. A high fidelity MATLAB / Simulink simulation is available to support these steps. This simulation has been used at the University of Minnesota and other research institutions to support courses and research since 2006. It effectively supports switching between multiple research aircraft to be simulated, is easy to add additional vehicles, and supports multiple levels of model fidelity. This simulation is in the process of being updated to support software and hardware in the loop testing, as well as autocode generation and flight data playback, with our updated flight control system. This capability is expected to be available summer of 2017.</p>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
 <p><a name="Development-Environment"></a></p>
 
 <h2 id="development-environment">Development Environment</h2>
@@ -250,7 +204,7 @@
 
 <p><a href="/assets/images/marmot_1146.png"><img src="/assets/images/marmot_300.png" alt="image-right" class="align-right" /></a></p>
 
-<p style="font-size: 80%;">The core of our flight system consisting of dual heterogeneous processors: a low level processor, called the Flight Management Unit (FMU), which conducts sensor and actuator operations, filtering, and maintains a hard real time environment; and a high level processor which uses the filtered sensor data to run control loops and compute actuator commands. The Marmot Flight Control System (FCS) uses a BeagleBone Black as a high level processor and a cape developed around the Teensy 3.6 as the FMU. The Teensy 3.6 processor is a 240 MHz Cortex M4 with a single precision hardware floating point unit. In addition to the Teensy 3.6, the FMU includes integrated:</p>
+<p style="font-size: 80%;">The core of our flight system consisting of dual heterogeneous processors: a low level processor, called the Flight Management Unit (FMU), which conducts sensor and actuator operations, filtering, and maintains a hard real time environment; and a high level processor which uses the filtered sensor data to run control loops and compute actuator commands. The Marmot Flight Control System (FCS) uses a BeagleBone Black as a high level processor and a cape developed around the Teensy 3.6 as the FMU. The Teensy 3.6 processor is a 240 MHz Cortex M4 with a single precision hardware floating point unit. In addition the Teensy 3.6, the FMU includes integrated:</p>
 <ul style="font-size: 80%;">
   <li>Voltage regulation, +6.5V to +36V input voltage, up to 2A of +5V output capacity plus high accuracy measurement of input and regulated voltages</li>
   <li>MPU-9250 nine axis inertial measurement unit</li>
@@ -264,7 +218,7 @@
   <li>Two GPIO’s, which can be configured for PWM output, digital I/O, or analog input</li>
 </ul>
 
-<h2 id="specifications">Specifications</h2>
+<h3 id="specifications">Specifications</h3>
 
 <ul style="font-size: 80%;">
   <li>Voltage input: +6.5V to +36V</li>
@@ -274,7 +228,128 @@
   <li><a href="/assets/docs/marmot-fcs-sch.pdf">Schematic</a></li>
 </ul>
 
-<p class="notice--warning">This system is intended for research, development, and educational purposes. It is not a ready-to-fly autopilot. We provide tested hardware, low level sensor drivers, a development environment, and support to enable our customers to develop software, analyze data, and conduct research.</p>
+<div id="product-component-0e08ed4dc33"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'bolder-flight-systems.myshopify.com',
+      apiKey: '5d031c37716943c132181e6697fc221a',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [416834912283],
+        node: document.getElementById('product-component-0e08ed4dc33'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "variantTitle": {
+        "font-size": "16px"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "description": {
+        "font-size": "16px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<p class="notice--warning">This system is intended for research, development, and educational purposes. It is not a ready-to-fly autopilot at this time. We provide tested hardware, low level sensor drivers, a development environment, and support to enable our customers to develop software, analyze data, and conduct research.</p>
 
 <p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
 
@@ -298,7 +373,7 @@
 
 <p style="font-size: 80%;">In addition to adding capability, the Raven Node simplifies wiring, requiring only the BFS bus to run from the Marmot Flight Control System to the Raven Node. For example, with a Raven Node placed in the wing of a fixed-wing UAS, only the BFS Bus and servo power would need to be connected across the wing break.</p>
 
-<h2 id="specifications-1">Specifications</h2>
+<h3 id="specifications-1">Specifications</h3>
 
 <ul style="font-size: 80%;">
   <li>Voltage input: +3.6V to +6V</li>
@@ -308,7 +383,128 @@
   <li><a href="/assets/docs/raven-node-sch.pdf">Schematic</a></li>
 </ul>
 
-<p class="notice--warning">This system is intended for research, development, and educational purposes. It is not a ready-to-fly autopilot. We provide tested hardware, low level sensor drivers, a development environment, and support to enable our customers to develop software, analyze data, and conduct research.</p>
+<div id="product-component-c73ef87cda4"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'bolder-flight-systems.myshopify.com',
+      apiKey: '5d031c37716943c132181e6697fc221a',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [416835502107],
+        node: document.getElementById('product-component-c73ef87cda4'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "variantTitle": {
+        "font-size": "16px"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "description": {
+        "font-size": "16px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<p class="notice--warning">This system is intended for research, development, and educational purposes. It is not a ready-to-fly autopilot at this time. We provide tested hardware, low level sensor drivers, a development environment, and support to enable our customers to develop software, analyze data, and conduct research.</p>
 
 <p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
 
@@ -325,7 +521,8 @@
   <li>14 bit resolution</li>
   <li>Libraries available to initialize the sensor and collect pressure data at rates of up to 2 kHz</li>
 </ul>
-<h2 id="specifications-2">Specifications</h2>
+
+<h3 id="specifications-2">Specifications</h3>
 
 <ul style="font-size: 80%;">
   <li>Voltage input: +3.32V to +6V</li>
@@ -334,7 +531,129 @@
   <li>Weight: 10 g</li>
 </ul>
 
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
+<div id="product-component-c941da0abda"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'bolder-flight-systems.myshopify.com',
+      apiKey: '5d031c37716943c132181e6697fc221a',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [416837402651],
+        node: document.getElementById('product-component-c941da0abda'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "variantTitle": {
+        "font-size": "16px"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "description": {
+        "font-size": "16px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<p style="font-size: 75%;"><br />
+<a href="/technical/#Overview">Back to top.</a></p>
 
 <p><a name="Add-On-Modules"></a></p>
 
@@ -342,7 +661,7 @@
 
 <h2 id="pwm-sbus-and-analog">PWM, SBUS, and Analog</h2>
 
-<p style="font-size: 80%;">Add on modules are available to break out the PWM, SBUS, and analog signals from the <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a> connectors on the <a href="#Marmot-Flight-Control-System">Marmot FCS</a> and <a href="#Raven-Node">Raven Node</a> to convenient 0.1” (2.54 mm) spaced headers, which fit standard servo connectors. These modules can be mounted on the Marmot FCS and Raven Node with 2-56 sized standoffs, which are provided with the module. The PWM and SBUS modules enable up to eight PWM or SBUS capable servos to be actuated. Additionally, the SBUS module includes two SBUS connectors, so a second SBUS module can be daisy chained to actuate up to sixteen SBUS capable servos. Both of these modules have integrated power and ground buses plus a screw terminal for power input. This feature means that a BEC capable ESC can be connected to the servo headers or an external power supply connected to the screw terminal. These boards support up to +9.9V and 12A of supply for the servos. The Marmot FCS and Raven Node feature integrated servo rail voltage measurement.</p>
+<p style="font-size: 80%;">Add on modules are available to break out the PWM, SBUS, and analog signals from the <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a> connectors on the <a href="#Marmot-Flight-Control-System">Marmot FCS</a> and <a href="#Raven-Node">Raven Node</a> to convenient 0.1” (2.54 mm) spaced headers, which fit standard servo connectors. These modules can be mounted on the Marmot FCS and Raven Node with 2-56 sized standoffs, which are provided with the module. The PWM and SBUS modules enable up to eight PWM or SBUS capable servos to be actuated. Additionally, the SBUS module includes two SBUS connectors, so a second SBUS module can be daisy chained to actuate up to sixteen SBUS capable servos. Both of these modules have integrated power and ground buses plus a screw terminal for power input. This feature means that servos can be powered from a BEC capable ESC can be connected to the servo headers or an external power supply connected to the screw terminal. These boards support up to +9.9V and 12A of supply for the servos. The Marmot FCS and Raven Node feature integrated servo rail voltage measurement.</p>
 
 <p style="font-size: 80%;">The analog add on module breaks out the analog <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a> connector on the <a href="#Raven-Node">Raven Node</a> to convenient 0.1” (2.54 mm) spaced headers, which fit standard servo connectors. This module features an integrated +3.3V and ground rail to facilitate easy integration of potentiometers (i.e. for control surface position or wind angle measurement). Up to eight channels of analog input are supported.</p>
 
@@ -391,547 +710,129 @@
   <li>Weight: 5 g</li>
 </ul>
 
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
+<div id="product-component-6a95a18680d"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
 
-<h1 id="connectors">Connectors</h1>
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
 
-<p style="font-size: 80%;">Below are the connectors for all Bolder Flight Systems components. These connectors incorporate signals as well as a regulated power supply.</p>
-<ul style="font-size: 80%;">
-  <li>Connector type: <a href="http://www.jst-mfg.com/product/detail_e.php?series=105">JST GH</a></li>
-  <li>Cable: 26 AWG, insulation outer diameter 0.76 to 1.0 mm. We use <a href="http://www.digikey.com/products/en?FV=ffec9cf5">EcoWire 6711 by Alpha Wire</a>.</li>
-  <li>Power supply: +5V</li>
-  <li>Current draw: up to 1A</li>
-</ul>
-<p class="notice--danger"><strong>Watch out!</strong> All signal voltages <strong>must be</strong> +3.3V, higher voltage signals may damage components!</p>
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
 
-<p style="font-size: 80%;">All bused signals are designed to provide two identical connectors per each interface per node, so that the node can be connected to the bus without need to use T-connectors.</p>
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'bolder-flight-systems.myshopify.com',
+      apiKey: '5d031c37716943c132181e6697fc221a',
+      appId: '6',
+    });
 
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [416841793563],
+        node: document.getElementById('product-component-6a95a18680d'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "variantTitle": {
+        "font-size": "16px"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "description": {
+        "font-size": "16px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
 
-<p><a name="BFS-Bus-I2C"></a></p>
-
-<h2 id="bfs-bus">BFS-Bus</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+5V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Slate</td> 
-    <td>SCL</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Violet</td> 
-    <td>SDA</td>
-    <td>+3.3V</td>
-  </tr>
-
-  <tr>
-    <td>4</td>
-    <td>Blue</td> 
-    <td>Int 1</td>
-    <td>+3.3V</td>
-  </tr>
-
-  <tr>
-    <td>5</td>
-    <td>White</td> 
-    <td>Int 2</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="uart">UART</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+5V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>White</td> 
-    <td>TX</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Blue</td> 
-    <td>RX</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="i2c">I2C</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+5V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Slate</td> 
-    <td>SCL</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Violet</td> 
-    <td>SDA</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="can">CAN</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+5V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Orange</td> 
-    <td>CAN H</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Brown</td> 
-    <td>CAN L</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="spi">SPI</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+5V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Slate</td> 
-    <td>SCK</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Blue</td> 
-    <td>MISO</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Violet</td> 
-    <td>MOSI</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>White</td> 
-    <td>CS</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Orange</td> 
-    <td>Int Out</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Brown</td> 
-    <td>Int In</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="sbus-rx">SBUS RX</h2>
-
-<p class="notice--danger"><strong>Watch out!</strong> The SBUS RX is for RC receivers only and provides power to the receiver. <strong>Never</strong> connect any servos, power supplies or batteries to it or to the receiver connected to it.</p>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+5V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>White</td> 
-    <td>RX</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="sbus-tx">SBUS TX</h2>
-
-<p class="notice--warning">Pin 1 is used to measure the external voltage applied to the SBUS servos, which can be used and logged within the flight software. This voltage is limited to +9.9V.</p>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>Vmeas</td>
-    <td>+9.9V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Orange</td> 
-    <td>TX</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="pwm-1">PWM</h2>
-
-<p class="notice--warning">Pin 1 is used to measure the external voltage applied to the SBUS servos, which can be used and logged within the flight software. This voltage is limited to +9.9V.</p>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>Vmeas</td>
-    <td>+9.9V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>White</td> 
-    <td>Actuator 0</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Blue</td> 
-    <td>Actuator 1</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Slate</td> 
-    <td>Actuator 2</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Violet</td> 
-    <td>Actuator 3</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Orange</td> 
-    <td>Actuator 4</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Brown</td> 
-    <td>Actuator 5</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>White</td> 
-    <td>Actuator 6</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Violet</td> 
-    <td>Actuator 7</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="analog-1">Analog</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Red</td> 
-    <td>VCC</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Slate</td> 
-    <td>Analog 0</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Blue</td> 
-    <td>Analog 1</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Violet</td> 
-    <td>Analog 2</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>White</td> 
-    <td>Analog 3</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Brown</td> 
-    <td>Analog 4</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Orange</td> 
-    <td>Analog 5</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Blue</td> 
-    <td>Analog 6</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Slate</td> 
-    <td>Analog 7</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="digital">Digital</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>White</td> 
-    <td>Digital 0</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Orange</td> 
-    <td>Digital 1</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Blue</td> 
-    <td>Digital 2</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Brown</td> 
-    <td>Digital 3</td>
-    <td>+3.3V</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h2 id="gpio">GPIO</h2>
-
-<table style="width:50%">
-  <tr>
-    <th bgcolor="#dddddd">Pin</th>
-    <th bgcolor="#dddddd">Color</th> 
-    <th bgcolor="#dddddd">Signal</th>
-    <th bgcolor="#dddddd">Voltage</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>White</td> 
-    <td>GPIO 0</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Violet</td> 
-    <td>GPIO 1</td>
-    <td>+3.3V</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Black</td> 
-    <td>GND</td>
-    <td>GND</td>
-  </tr>
-</table>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
-
-<h1 id="bfs-bus-1">BFS Bus</h1>
-
-<h2 id="overview-1">Overview</h2>
-
-<p style="font-size: 80%;">The BFS Bus is an extremely low-latency, high bandwidth bus. It is designed to enable expansion of the flight control system without introducing latency. I2C is used as the communication protocol with a 6 MHz clock rate, enabling transfer rates of 245 kBytes/s. The BFS Bus master (i.e. Marmot FCS) pulls the Int 1 line high at the start of a computation frame, indicating that all slave nodes (i.e. Raven Nodes) should take their sensor measurements. This approach means that all nodes on the BFS Bus are taking measurements simultaneously, regardless of the number of nodes, leading to an extremely low-latency bus. The BFS Bus master then requests data from each slave node. This data is logged and potentially used in the flight control laws to generate servo commands. The BFS Bus master sends servo commands to all applicable slave nodes. Finally, the BFS Bus master brings the Int 1 line low, signaling to all slave nodes to issue the servo commands. The Int 2 line is reserved for future use.</p>
-
-<h2 id="wiring">Wiring</h2>
-
-<p style="font-size: 80%;">Please see the <a href="#BFS-Bus-I2C">BFS Bus connector standards</a>.</p>
-
-<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
+<p style="font-size: 75%;"><br />
+<a href="/technical/#Overview">Back to top.</a></p>
 
     </section>
   </article>
