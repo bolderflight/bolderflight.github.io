@@ -140,6 +140,7 @@
   <li><a href="#overview" id="markdown-toc-overview">Overview</a>    <ul>
       <li><a href="#flight-systems" id="markdown-toc-flight-systems">Flight Systems</a></li>
       <li><a href="#development-environment" id="markdown-toc-development-environment">Development Environment</a></li>
+      <li><a href="#raptrs" id="markdown-toc-raptrs">RAPTRS</a></li>
     </ul>
   </li>
   <li><a href="#marmot-flight-control-system" id="markdown-toc-marmot-flight-control-system">Marmot Flight Control System</a></li>
@@ -196,6 +197,17 @@
 <p style="font-size: 80%;">Arduino is used as a development environment for the Flight Management Unit (FMU) and expansion sensor and actuator nodes. Libraries are available for all Bolder Flight Systems supplied sensors and, due to the vibrant Teensy and Arduino communities, many additional sensors are already supported. These processors are extremely powerful and well supported by the community. Software is uploaded via USB and coding is standard C++. Our high level processor runs Linux, offering a very common development environment with packaged libraries and supporting many coding languages (C++, Python, Rust, etc).</p>
 
 <p style="font-size: 80%;">This approach enables great performance from our system while maintaining a researcher friendly development environment.</p>
+
+<p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
+
+<p><a name="RAPTRS"></a></p>
+
+<h2 id="raptrs">RAPTRS</h2>
+<p style="font-size: 80%;">RAPTRS is our in-house, open-source flight software stack focused on data quality, scalability, low-latency, and determinism. This unique set of capabilities is not found in other flight software stacks and RAPTRS is built from the ground up to take full advantage of our innovative flight control platform. Scalability means RAPTRS is always “right-sized” for any flight application. Unparalleled data quality, low-latency, and determinism enable RAPTRS to be used in demanding environments, providing excellent data for research and development and greatly improving geolocation for reduced post-processing efforts.</p>
+
+<p style="font-size: 80%;">In addition to these capabilities, the long term goal of RAPTRS is to develop an open-source software suite to enable RAPTRS to be quickly and autonomously integrated onto any aircraft. Starting from simple aircraft models, RAPTRS will use real-time system identification and estimation techniques to autonomously “Learn to Fly” any aircraft, resulting in a research-quality autonomous aircraft with tuned baseline control laws and flight validated models. RAPTRS stands for the Rapid Autonomy Platform and Testbed Reconfiguration Suite, and when complete, RAPTRS will dramatically reduce the effort required to bring new drones to flight.</p>
+
+<p style="font-size: 80%;">For more information on RAPTRS, or to become part of our development team, please visit our <a href="/raptrs">RAPTRS development page</a>.</p>
 
 <p style="font-size: 75%;"><a href="/technical/#Overview">Back to top.</a></p>
 
