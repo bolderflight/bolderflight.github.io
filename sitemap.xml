@@ -18,6 +18,9 @@
 <loc>/donate/</loc>
 </url>
 <url>
+<loc>/products/flight/</loc>
+</url>
+<url>
 <loc>/</loc>
 </url>
 <url>
@@ -34,6 +37,12 @@
 </url>
 <url>
 <loc>/technical/</loc>
+</url>
+<url>
+<loc>/products/teensy/pinout/</loc>
+</url>
+<url>
+<loc>/products/teensy/</loc>
 </url>
 <url>
 <loc>/assets/docs/Hardware-Integration-Manual.pdf</loc>
