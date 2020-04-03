@@ -228,29 +228,12 @@ body{
 }
 .t4{
   order: 20;
-  flex-basis: 27%;
+  flex-basis: 45%;
 }
 .t4 img{
   max-height: 250px;
   width: auto;
 }
-.t5{
-  order: 21;
-  flex-basis: 27%;
-}
-.t5 img{
-  max-height: 250px;
-  width: auto;
-}
-.t6{
-  order: 22;
-  flex-basis: 27%;
-}
-.t6 img{
-  max-height: 250px;
-  width: auto;
-}
-
 /* Footer */
 #fixed-footer{
   position: relative;
