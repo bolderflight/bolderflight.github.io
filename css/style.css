@@ -4,7 +4,7 @@
   padding: 0;
 }
 /* Only flex on desktop */
-@media(min-width: 768px) {
+@media(min-width: 975px) {
   #main-header{
     display: flex;
     justify-content: space-between;
@@ -60,8 +60,9 @@ body{
   background: #75b9e6;
   color: #fff;
   height: 75px;
+  min-width: 600px;
 }
-@media(min-width: 768px) {
+@media(min-width: 975px) {
   #main-header{
     height: 50px;
   }
@@ -91,7 +92,7 @@ body{
 #space{
   margin: 75px;
 }
-@media(min-width: 768px) {
+@media(min-width: 975px) {
   #space{
     margin: 50px;
   }
@@ -135,7 +136,7 @@ body{
   line-height: 1.5;
   color: #fff;
 }
-@media(min-width: 768px) {
+@media(min-width: 975px) {
   #showcase-text h1{
     width: 50%;
   }
@@ -245,7 +246,7 @@ body{
   margin: auto;
   width: 100%;
 }
-@media(min-width: 768px) {
+@media(min-width: 975px) {
   #fixed-footer{
     position: fixed;
   }
