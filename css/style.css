@@ -112,13 +112,13 @@ body{
 }
 .box-redundancy{
   flex-basis: 45%;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   color: #05131c;
   font-size: 18px;  
 }
 .box-redundancy img{
-  width: 100%;
+  width: 75%;
 }
 
 .box ul{
