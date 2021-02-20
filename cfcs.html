@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#75b9e6">
     <title>Bolder Flight Systems</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./java/nav-dropdown.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,8 +24,13 @@
             <div id="branding">
               <a href="index.html"><h1><span class="highlight">Bolder</span> Flight Systems</h1></a>
             </div>
-            <nav>
-              <ul id="nav">
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <nav class="nav">
+              <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="control.html">Flight Control</a></li>
                 <li class="current"><a href="cfcs.html">C-FCS</a></li>
@@ -41,10 +47,7 @@
     <section>
       <div id="boxes">
         <div class="box box1">
-          <br>
           <h1>Common Flight Control System (C-FCS)</h1>
-          <!-- <a name="value"></a> --> 
-          <br>
           <p>We are developing a Common Flight Control System (C-FCS) capable of safely controlling vehicles ranging from small hand-launched drones to large, manned aircraft. C-FCS can rapidly scale from single string to redundant systems using plug-and-play sensors, processors, and actuators. Airframers and integrators will be able to quickly commercialize new technologies by leveraging a common set of hardware, software, and development tools across a product line of manned and unmanned aircraft. C-FCS enables end-user standardization across a diverse fleet of aircraft which reduces training, maintenance, logistics, and upgrade costs. C-FCS can also facilitate interoperability between vehicles, assist with research efforts, and streamline the airworthiness certification process. 
           </p>
         </div>
@@ -53,7 +56,6 @@
         </div>
         <div class="box box3">
           <h1>Functionality</h1>
-          <br>
           <p>C-FCS flexibly integrates sensors, actuators, and processors on a common network, intelligently identifying and using redundant components, which enhances redundancy for safety-critical and manned vehicles. Fault tolerant control software maximally utilizes the system redundancy, autonomously detecting faults and modifying control laws to enable the vehicle to safely continue flight. Cascaded flight control laws support <span class="highlight">fully-autonomous, remotely-piloted, and piloted</span> modes of operation by minimally-trained operators. Handling qualities will be evaluated to ensure safe vehicle operation, even in degraded vehicle states</p>
         </div>
         <div class="box-redundancy box4">
@@ -64,7 +66,6 @@
         <div class="box box5">
           <br>
           <h1>Air Force Partnership</h1>
-          <br>
           <p>We were awarded an AFWERX Agility Prime Phase I Small Business Technology Transfer (STTR) to demonstrate feasibility and conduct customer exploration. Our partners include Pennsylvania State University (PSU), Systems Technology Inc (STI) and Beta Technologies. PSU has expertise in fault-detection, reconfiguration, machine learning, and handling qualities. STI brings expertise in control law design and handling qualities analysis. Beta Technologies brings unique feedback as a potential customer and developer of a manned eVTOL vehicle. Together we are creating a fault-tolerant, plug-and-play common flight control system.
               <br> 
               <br>
