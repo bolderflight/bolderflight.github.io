@@ -212,10 +212,10 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.gray-showcase{
+.logo-showcase{
   margin-top: 20px;
   height: 70px;
-  background-image: url(../img/gray_stars.jpg);
+  background:none;
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
