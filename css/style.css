@@ -92,81 +92,87 @@ body{
   color:steelblue;
   font-weight: bold;
 }
-.nav-button{
+ .nav-small{
   display: none;
 }
-.nav-button-content{
-  display: none;
-}
-
-@media (max-width: 610px) {
+@media (max-width: 620px) {
   #main-header{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-left: 0px;
     background: #75b9e6;
     color: #fff;
-    height: 65px;
+    height: 75px;
   }
   #branding{
     margin-left: .1em;
     padding-top: 4px;
-    font-size: 13px;
   }
-  .nav-button {
-    display: flex;
-    position: absolute;
-    top: 16px;
-    left: .2em;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35px;
-    height: 35px;
+   .nav ul{
+    display:none;
   }
-  .nav{
-    display: flex;
-    flex-direction: column;
-    width: 160px;
-    padding-bottom: 10px;
-    align-items: stretch;
-    text-align: left;
-    background: #75b9e6;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    margin-left: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
+
+  .nav-small{
+    display: block;
+
   }
-  .nav-link{
-    display: flex;
+  .nav-small li{
+    display: inline;
+    padding: 0px 10px;
+  }
+  .nav-small-link{
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    padding-left: 20px;
-    height: 5px;
+    font-size: 15px;
   }
-  .nav .current .nav-link{
+  .nav-small .current .nav-small-link{
     color: #05131c;
     font-weight: bold;
   }
-  .nav-link:hover{
+  .nav-small-link:hover{
     color:steelblue;
     font-weight: bold;
   }
-  .nav-button:hover{
-    background:white;
-    border-radius: 3px;
+}
+@media (max-width: 422px) {
+  #main-header{
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    background: #75b9e6;
+    color: #fff;
+    height: 75px;
   }
-  .nav-button:focus ~ .nav{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(10px);
+  #branding{
+    margin-left: .1em;
+    padding-top: 4px;
+    font-size: 12px;
   }
-  .nav:active {
-    pointer-events: auto;
- }
+   .nav ul{
+    display:none;
+  }
+
+  .nav-small{
+    display: block;
+
+  }
+  .nav-small li{
+    display: inline;
+    padding: 0px 5px;
+  }
+  .nav-small-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .nav-small .current .nav-small-link{
+    color: #05131c;
+    font-weight: bold;
+  }
+  .nav-small-link:hover{
+    color:steelblue;
+    font-weight: bold;
+  }
 }
 
 /* Spacing because of fixed position header */
