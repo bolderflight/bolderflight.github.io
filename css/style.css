@@ -109,13 +109,15 @@ body{
     height: 65px;
   }
   #branding{
-    margin-left: 27px;
+    margin-left: .1em;
+    padding-top: 4px;
+    font-size: 13px;
   }
   .nav-button {
     display: flex;
     position: absolute;
     top: 16px;
-    left: 5px;
+    left: .2em;
     flex-direction: column;
     justify-content: space-between;
     width: 35px;
@@ -247,6 +249,12 @@ body{
     width: 50%;
   }
 }
+@media(max-width: 30em){
+  .logo-showcase{
+    display:none;
+  } 
+}
+
 .box1{
   order: 1;
 }
