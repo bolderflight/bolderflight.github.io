@@ -121,7 +121,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     width: 35px;
-    height: auto;
+    height: 35px;
   }
   .nav{
     display: flex;
