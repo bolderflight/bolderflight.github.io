@@ -251,7 +251,6 @@ body{
   flex-basis: 70px;
   height: auto;
 }
-
 .store-banner{
   display: flex;
   height: 100px;
@@ -260,7 +259,6 @@ body{
   justify-content: center;
   align-items:center;
 }
-
 .store {
   margin-top: 80px;
   display: flex;
@@ -269,7 +267,14 @@ body{
   justify-content: center;
   align-items:flex-end;
 }
-
+.store p{
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  background-color: #fff;
+  text-align: center;
+}
 .product{
   margin-left: 30px;
   margin-right: 30px;
