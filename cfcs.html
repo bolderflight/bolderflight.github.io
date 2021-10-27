@@ -54,15 +54,78 @@
       <div id="boxes">
         <div class="box box1">
           <h1>Common Flight Control System (C-FCS)</h1>
-          <p>We are developing a Common Flight Control System (C-FCS) capable of safely controlling vehicles ranging from small hand-launched drones to large, manned aircraft. C-FCS can rapidly scale from single string to redundant systems using plug-and-play sensors, processors, and actuators. Airframers and integrators will be able to quickly commercialize new technologies by leveraging a common set of hardware, software, and development tools across a product line of manned and unmanned aircraft. C-FCS enables end-user standardization across a diverse fleet of aircraft which reduces training, maintenance, logistics, and upgrade costs. C-FCS can also facilitate interoperability between vehicles, assist with research efforts, and streamline the airworthiness certification process. 
+          <p>
+            <ul>
+              <li> <span class="highlight">Fully-autonomous, remotely-piloted, and piloted modes of operation</span> </li>
+                <ul>
+                  <li>Cascaded control laws</li>
+                </ul> 
+              <li><span class="highlight">Enhanced safety through redundancy</span></li>
+              <ul>
+                <li>Rapid scaling ability</li>
+                <li>Plug-and-play sensors, processors, and actuators</li>
+                <li>Intelligent identification of redundant components</li>
+              </ul>
+              <li><span class="highlight">Fault-tolerant control software</span></li>
+              <ul>
+                <li>autonomous fault detection and control law modification for safe flight</li>
+              </ul>
+              <li> <span class="highlight">Common set of hardware, software, and development tools across a varying fleet of aircraft</span></li>
+              <ul>
+                <li>Quick commercialization of new technologies</li>
+                <li>Ease of maintenance and training</li>
+                <li>End-user standardization</li>
+                <li>Streamlined airworthiness certification process</li>
+                <li>Interoperability between vehicles</li>
+              </ul>
+              <li><span class="highlight">Research and flight test capabilities</span></li>
           </p>
+
         </div>
         <div class="box box2">
           <img src="./img/cfcs_acft.png">
         </div>
         <div class="box box3">
-          <h1>Functionality</h1>
-          <p>C-FCS flexibly integrates sensors, actuators, and processors on a common network, intelligently identifying and using redundant components, which enhances redundancy for safety-critical and manned vehicles. Fault tolerant control software maximally utilizes the system redundancy, autonomously detecting faults and modifying control laws to enable the vehicle to safely continue flight. Cascaded flight control laws support <span class="highlight">fully-autonomous, remotely-piloted, and piloted</span> modes of operation by minimally-trained operators. Handling qualities will be evaluated to ensure safe vehicle operation, even in degraded vehicle states</p>
+          <h1>Current Development</h1>
+          <p>
+            <ul>
+            <li>Air Force Small Business Technology Transfer (STTR) Phase II</li>
+              <li>Partners:
+                <ul>
+                  <li>Pennsylvania State (PSU)</li>
+                  <li>Systems Technology Inc (STI)</li>
+                  <li>Beta Technologies</li>
+                </ul>
+              </li>
+              <li>15 month development timeline</li>
+            <ul>
+              <li>Software Validation</li>
+              <ul>
+                <li>CAN Aerospace, AIRNC-825, and UAV CAN compatibility</li>
+                <li>Redundancy management</li>
+                <li>Automatic reversion control for enhanced safety in development</li>
+              </ul>
+              <li>Fault tolerant control laws</li>
+                <ul>
+                  <li>PSU's Adaptive Nueral Network</li>
+                </ul>
+              <li>Integration with Air Force Research Lab's (AFRL) Advanced Framework for Simulation, Integration and Modeling (AFSIM) software</li>
+              <li>Operator-in-the-Loop Simulations</li>
+                <ul>
+                  <li>C-FCS functionality demonstration</li>
+                  <li>Handling qualities evaluation</li>
+                  <li>Manned-unmanned Teaming (MUM-T) investigation</li>
+                </ul>
+              <li>Prototype manufacture</li>
+              <li>Flight test with Beta Technologies</li>
+              <ul>
+                <li>1/5 scale UAS testbed of the ALIA eVTOL</li>
+                <li>Test partial failures of control surfaces and sensors</li>
+                <li>Test VTOL transition modes</li>
+              </ul>
+            </ul>
+            </ul>
+          </p>
         </div>
         <div class="box-redundancy box4">
           <br>
@@ -72,21 +135,31 @@
         <div class="box box5">
           <br>
           <h1>Air Force Partnership</h1>
-          <p>We have been selected for an AFWERX Agility Prime <span class="highlight">Phase II </span>Small Business Technology Transfer (STTR) to increase C-FCS capabilities and integrate with the Air Force Research Lab’s (AFRL) Advanced Framework for Simulation, Integration and Modeling software (AFSIM). We plan to integrate intelligent fault-tolerance, increase plug-and-play redundancy capabilities, and conduct flight testing on Beta Technologies’ demonstration aircraft. We will work with AFRL to test the integration capabilities with their AFSIM software to determine the feasibility of using C-FCS for Air Force programs of record aircraft development. Our partners on this project include Pennsylvania State University (PSU), Systems Technology Inc (STI) and Beta Technologies. Together we will develop the C-FCS capabilities and bring it to completion in 2022.</p>
-              <br> 
-              We would love to discuss potential partnerships with you for Phase II development and C-FCS commercial use. 
-              <span class="highlight">Please <a href="index.html#contact">contact</a> us today!</span>
-              </p>
+          <p>AFRL's Power and Controls Division (AFRL/RQQC) of the Aerospace Systems Directorate has partnered with us for C-FCS development and is very interested 
+            in the technology for their program development and AFSIM integration.
+            C-FCS will provide a system with well-understood performance characteristics, risk levels, and methods of integration for their Air Force customers.
+            C-FCS will also provide them flexible architecture and open-source software for quick-turnaround projects with the Air Force Program Executive Offices (PEO) that request their expertise.
+            Projects can be tested on their in-house aircraft and a standard control system will allow for quick delivery of solutions to meet the warfighter needs. 
+            <br>
+            <br>
         </div>
         <div class="box box6">
           <img src="./img/STTR_partners.png">
         </div>
         <div class="box box7">
-          <a href="./cfcs/C-FCS Summary.pdf">One Page Summary of C-FCS</a>
-          <br>
-          <video width="410" height="240" controls>
-            <source src="./cfcs/BFS_Pitch.mp4" type="video/mp4">
-          </video>
+          <h1>Product Interest</h1>
+          <p>
+            If you think you might be interested in C-FCS for Commercial, DoD, or other government use,
+            <span class="highlight">please <a href="index.html#contact">contact</a> us today!</span>
+          </p>
+          <div id="space"></div>
+          <div class="box box8">
+            <a href="./cfcs/C-FCS Summary.pdf">One Page Summary of C-FCS</a>
+            <br>
+            <video width="410" height="240" controls>
+             <source src="./cfcs/BFS_Pitch.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>  
     </section>
