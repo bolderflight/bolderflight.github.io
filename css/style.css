@@ -67,6 +67,16 @@ body{
     height: 50px;
   }
 }
+@media (max-width: 465px) {
+  #main-header{
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    background: #75b9e6;
+    color: #fff;
+    height: 100px;
+  }
+}
 #branding{
   min-width: 350px;
 }
@@ -95,15 +105,7 @@ body{
  .nav-small{
   display: none;
 }
-@media (max-width: 620px) {
-  #main-header{
-    text-align: center;
-    padding-top: 0px;
-    padding-left: 0px;
-    background: #75b9e6;
-    color: #fff;
-    height: 75px;
-  }
+
   #branding{
     margin-left: .1em;
     padding-top: 4px;
@@ -176,6 +178,14 @@ body{
 }
 
 /* Spacing because of fixed position header */
+#space-header{
+  margin: 75px;
+}
+@media(max-width: 465px) {
+  #space-header{
+    margin: 100px;
+  }
+}
 #space{
   margin: 75px;
 }
@@ -267,6 +277,10 @@ body{
   justify-content: center;
   align-items:flex-end;
 }
+.store h1{
+    display: flex;
+    text-align: center;
+  }
 .store p{
   margin: 15px;
   font-family: Arial, Helvetica, sans-serif;
