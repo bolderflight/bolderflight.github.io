@@ -275,7 +275,7 @@ footer {
   }
 }
 
-@media(max-width: 825px) {
+@media(max-width: 900px) {
   body {
     grid-template-rows: 80px 1fr 25px;
   }
