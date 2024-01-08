@@ -251,6 +251,12 @@ footer {
   align-items: center;
 }
 
+.onflight-img {
+  width: 75px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
 @media(max-width: 900px) {
   .services-holder {
     justify-content: center;
